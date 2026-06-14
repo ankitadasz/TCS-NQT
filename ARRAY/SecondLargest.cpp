@@ -4,6 +4,7 @@ int main(){
     int n;
     cin>>n;
     int arr[n];
+    int count=0;
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
@@ -14,10 +15,15 @@ int main(){
             secondLargest=largest;
             largest=arr[i];
         }
-        else if(arr[i]>secondLargest && arr[i]!=largest){
+        else if(arr[i]==secondLargest && arr[i]!=largest){
             secondLargest=arr[i];
+            count=1;
         }
     }
-    cout<<secondLargest;
-
+    if(count==1){
+        cout<<secondLargest;
+    }
+    else{
+        cout<<-1;
+    }
 }

@@ -4,10 +4,12 @@ int main(){
     int n;
     cin>>n;
     int arr[n];
-    vector<int>ans;
-    unordered_set<int>st;
     for(int i=0;i<n;i++){
         cin>>arr[i];
+    }
+    unordered_set<int>st;
+    vector<int>ans;
+    for(int i=0;i<n;i++){
         if(st.find(arr[i])==st.end()){
             st.insert(arr[i]);
             ans.push_back(arr[i]);

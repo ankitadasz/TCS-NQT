@@ -1,21 +1,18 @@
-#include<bits/stdc++.h>
+#include <iostream>
 using namespace std;
+
 int main(){
-    int a=0;
-    int b=1;
-    int c;
-    int n;
-    cin>>n;
-    
-
-    for(int i=0;i<n;i++){
-        cout<<a<<" ";
-        c=a+b;
-        a=b;
-        b=c;
-        
-    }
-    
-
-
+    int i,j;
+   int n=5;
+   for(int k=1;k<=n;k++){
+     for(i=1;i<=n-k;i++){
+    cout<<" "<<" ";
+   }
+ 
+   for(i=0;i<2*k-1;i++){
+    cout<<"*"<<" ";
+   }
+   cout<<endl;
+   }
+  
 }
